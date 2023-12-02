@@ -16,6 +16,8 @@ body {
     font-size: 19.2px;
     background-color: #ffffff;
     line-height: 2;
+    margin: 0;
+    padding: 0;
 }
 
 figure {
@@ -79,7 +81,7 @@ footer {
 footer p {
     color: #ffffff;
     text-align: center;
-    margin: 16px;
+    margin: 0;
     font-weight: 300;
     padding-top: 8px;
 }
@@ -114,11 +116,9 @@ a:hover {
 }
 
 .background {
-    background: repeat-x url("../media/gulp-bottom-beans.jpg");
+    background: url("../media/gulp-bottom-beans.jpg");
     width: 100vw;
-    height: 250px;
-    margin: 0 0 0 0;
-
+    height: 240px; 
 }
 
 

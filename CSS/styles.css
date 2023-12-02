@@ -12,11 +12,9 @@ html {
 /* global element styling */
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: "Lato", "Poppins", "Arial";
-    font-size: 16px;
-    background-color: #DBEEEF;
+    font-size: 19.2px;
+    background-color: #ffffff;
     line-height: 2;
 }
 
@@ -30,24 +28,72 @@ img {
     border-radius: 10px;
 }
 
-h1{
+h1,
+h2 {
     font-family: "Poppins";
 }
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 19.2px;
+
+}
+
 
 header {
     background-color: #082b59;
     border-bottom: 8px solid #d98555;
 }
 
-footer {
-    background-color: #082b59;
-    border-top: 8px solid #d98555;
-    padding: 3rem;
-    text-align: center;
+article {
+    padding: 16px;
 }
 
-article {
-    padding: 0 2rem;
+.map, .tel {
+    color: #59331d;
+
+}
+
+button {
+    background-color: #59331d;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 7px;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 19.2px;
+}
+
+footer {
+    background-color: #082b59;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin: 16px;
+    font-weight: 300;
+    padding-top: 8px;
+}
+
+.disclaimer {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+
+footer span {
+    color: #ffffff;
+    padding: 16px;
+    height: ;
 }
 
 a {
@@ -56,54 +102,23 @@ a {
 
 a:hover {
     color: #d98555;
-    font-weight: bolder;
     text-decoration: none;
 }
 
-
-/* specific styling for product cards */
-
-
-.card {
-    background-color: #193e2e;
-    color: #ffffff;
-    border-radius: 10px;
+.container img {
+    width: 327px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 32px 0;
 }
 
-.card h2 {
-    padding: 1rem 1rem 0 1rem;
-}
+.background {
+    background: repeat-x url("../media/gulp-bottom-beans.jpg");
+    width: 100vw;
+    height: 250px;
 
-.card p {
-    padding: 0rem 1rem 1rem 1rem;
-}
-
-.card img {
-    border-radius: 0;
-}
-
-figcaption {
-    text-align: center;
-}
-
-.flexrow1 img,
-.flexrow2 img {
-    border-radius: 10px;
-}
-
-.bkgd {
-    background-color: #ffffff;
-}
-
-
-/* layout - mobile first! */
-
-.container,
-.home,
-.products {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
 }
 
 
@@ -120,20 +135,19 @@ nav ul {
 }
 
 nav a {
-    font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
-    background-color: #193e2e;
+    background-color: #082b59;
     color: #ffffff;
-    border-radius: 10px;
     margin: 0 0 2rem 0;
     text-align: center;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 nav a:hover {
-    background-color: #008077;
-    color: #ffffff;
+    color: #d98555;
 }
 
 nav img {
@@ -144,6 +158,34 @@ nav .logo a {
     background-color: transparent;
     margin: 0;
 }
+
+/* specific styling for products page */
+.prodcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+
+}
+
+.prodcontainer img {
+    width: 279px;
+}
+
+
+/* layout - mobile first! */
+.container,
+.home,
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+
+
+
+
+
 
 
 /* home page: make the captions display on the images -- OUTSIDE the media queries because we want this to happen always on all devices */
@@ -173,6 +215,12 @@ nav .logo a {
 }
 
 @media (min-width: 550px) {
+    .background {
+        height: 250px;
+        width: 100vw;
+        background: repeat-x url('media/gulp-bottom-beans.jpg');
+    }
+
     nav {
         margin-left: 0;
     }

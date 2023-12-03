@@ -25,7 +25,7 @@ figure {
     padding: 0;
 }
 
-img {
+img, picture {
     max-width: 100%;
     border-radius: 10px;
 }
@@ -180,37 +180,11 @@ nav .logo a {
     padding: 1rem 1rem;
 }
 
-/* home page: make the captions display on the images -- OUTSIDE the media queries because we want this to happen always on all devices */
-
-.flexrow1 figure,
-.flexrow2 figure {
-    display: grid;
-    grid-template-rows: 2fr 0.1fr;
-    margin-bottom: 2rem;
-}
-
-.flexrow1 img,
-.flexrow2 img {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border-radius: 10px 10px 0 0;
-}
-
-.flexrow1 figcaption,
-.flexrow2 figcaption {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-color: #193e2e;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
 @media (min-width: 550px) {
     .background {
-        height: 250px;
+        background: url("../media/gulp-bottom-beans.jpg");
         width: 100vw;
-        background: repeat-x url('media/gulp-bottom-beans.jpg');
+        height: 240px; 
     }
 
     nav {
@@ -235,6 +209,14 @@ nav .logo a {
 }
 
 @media (min-width: 750px) {
+    .background {
+        background: url("../media/gulp-bottom-beans.jpg");
+        width: 100vw;
+        height: 240px; 
+    }
+
+    
+
     .container {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -272,6 +254,12 @@ nav .logo a {
 }
 
 @media (min-width: 900px) {
+    .background {
+        background: url("../media/gulp-bottom-beans.jpg");
+        width: 100vw;
+        height: 240px; 
+    }
+
     nav ul {
         justify-content: flex-start;
     }
